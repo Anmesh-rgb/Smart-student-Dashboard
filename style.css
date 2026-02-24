@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .dashboard{
     display: flex;
 }
@@ -14,6 +18,7 @@
     justify-content: flex-start;
     margin: 20px 0px 0px 20px;
 }
+
 #nav1 .logo{
     display: flex;
     border-bottom: 1px solid rgb(196, 190, 190);
@@ -67,13 +72,167 @@
 #content{
     background-color: rgb(200, 198, 198);
     height:87dvh;
-    width: 142.3dvh;
+    width: 77dvw;
     border-radius: 0px 0px 15px 0px;
+    overflow: hidden;
+    padding: 10px;
 }
-.card{
-    height: 30dvh;
+.cards{
     width: 50dvh;
     background-color: rgb(215, 223, 222);
     border-radius: 15px;
+    margin: 10px 0px 0px 10px;
 
+}
+.card1{
+    height: 30dvh;
+    display:grid;
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card1 h2{
+    height: fit-content;
+    border-bottom:1px solid rgb(204, 198, 198);
+}
+.card1 div{
+    height: 20dvh;
+    width: 27dvw;
+    display:grid;
+    justify-items: center;
+    padding: 10px;
+}
+.card1 span input{
+    border-radius: 15px;
+    border: none;
+    height: 4dvh;
+    margin-left: 2px;
+    padding: 9px;
+    
+}
+.card1 #span-2{
+    margin-top: 9px;
+
+} 
+.save_btn{
+    background-color: rgb(33, 89, 169);
+    border-radius: 15px;
+    border: none;
+    width: 8dvw;
+    height: 5dvh;
+    cursor: pointer;
+    color: white;
+    margin-top: 15px;
+    justify-self: center;
+}
+.card2{
+    height: 15dvh;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card2 label{
+    display: flex;
+}
+.card2 label h4{
+    height: fit-content;
+    width: fit-content;
+    margin:0%;
+    margin-left: 4px;
+}
+/* card 3 */
+.card3{
+    height: 15dvh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+.progress_cont{
+    width: 22dvw;
+    height: 4.5dvh;
+    border: 1px solid rgb(40, 37, 37);
+    border-radius: 25px;
+    justify-self: center;
+}
+.progress{
+    width: 82%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 25px 0px 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.card3 label{
+    margin-top: 4px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    height: 4.5dvh;
+    border-bottom:1px solid rgb(204, 198, 198);
+}
+.card4{
+    height: 16dvh;
+    width: 44dvw;
+    margin-top: 15px;
+}
+.card4 h2{
+    margin-top: 4px;
+    justify-self: center;
+    border-bottom: 1px solid rgb(204, 198, 198);
+}
+.card4 input{
+    width: 15dvw;
+    height: 5dvh;
+    border-radius: 15px;
+    border: none;
+}
+.card4 #reset{
+    background-color: rgb(188, 16, 16);
+    color: white;
+    cursor: pointer;
+}
+.card4 #mode{
+    background-color: rgb(58, 57, 57);
+    color: white;
+    cursor: pointer;
+}
+.card4 #input_div{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* starting card 5 */
+#card45{
+    display: flex;
+}
+.card5{
+    margin-left: 56px;
+    width: 25dvw;
+}
+.card5 h2{
+    justify-self: center;
+    margin: 7px 0px 0px 0px;
+    border-bottom: 1px solid rgb(204, 198, 198);
+}
+.card5 p{
+    margin: 10px 0px 12px 15px;
+    color: rgb(103, 100, 100);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card5 #quiz_btn{
+    display: flex;
+    justify-self: end;
+    width: 7dvw;
+    height: 4dvh;
+    border-radius: 15px;
+    border: none;
+    background-color:  rgb(33, 89, 169);
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+
+    
 }
