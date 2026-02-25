@@ -236,3 +236,28 @@
 
     
 }
+/* starting card67 */
+.card1267{
+    display: flex;
+}
+.card67{
+    width: 43dvw;
+    height: 58dvh;
+    margin: 12px 0px 0px 36px;
+    border-radius: 15px;
+    background-color: rgb(215, 223, 222);
+}
+/* starting subject and marks sec */
+.sub{
+    height: 40dvh;
+    width: 30dvw;
+    display: grid;
+    justify-content: center;
+
+
+}
+.sub h2{
+    margin: 10px 0px 0px 0px;
+    border-bottom: 1px solid rgb(204, 198, 198);
+    height: 5dvh;
+}
