@@ -248,16 +248,40 @@
     background-color: rgb(215, 223, 222);
 }
 /* starting subject and marks sec */
-.sub{
-    height: 40dvh;
-    width: 30dvw;
-    display: grid;
-    justify-content: center;
-
-
+.card6{
+    width: 50%;
+    height: 57dvh;
+    margin: 0px 0px 0px 15px;
 }
-.sub h2{
-    margin: 10px 0px 0px 0px;
+.card6 h2{
+    margin: 8px 0px 0px 0px;
     border-bottom: 1px solid rgb(204, 198, 198);
     height: 5dvh;
+    display: flex;
+    justify-content: center;
+}
+.card6 div{
+    height: 23dvh;
+    width: 27dvw;
+    display:grid;
+    justify-items: center;
+    padding: 10px;
+
+}
+.card6 #sub-btn{
+    width: 8dvw;
+    height: 4dvh;
+    border-radius: 15px;
+    border: none;
+    background-color:  rgb(33, 89, 169);
+    color: white;
+    cursor: pointer;
+}
+.card6 span input{
+    border-radius: 15px;
+    border: none;
+    height: 4dvh;
+    margin-left: 2px;
+    padding: 9px;
+    
 }
