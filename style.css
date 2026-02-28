@@ -246,23 +246,25 @@
     margin: 12px 0px 0px 36px;
     border-radius: 15px;
     background-color: rgb(215, 223, 222);
+    display: flex;
+    justify-content: space-evenly;
 }
 /* starting subject and marks sec */
 .card6{
     width: 50%;
     height: 57dvh;
     margin: 0px 0px 0px 15px;
+    
 }
 .card6 h2{
     margin: 8px 0px 0px 0px;
     border-bottom: 1px solid rgb(204, 198, 198);
     height: 5dvh;
-    display: flex;
-    justify-content: center;
+  
 }
 .card6 div{
     height: 23dvh;
-    width: 27dvw;
+    width: 22dvw;
     display:grid;
     justify-items: center;
     padding: 10px;
@@ -284,4 +286,15 @@
     margin-left: 2px;
     padding: 9px;
     
+}
+.card6 #input_div{
+    border-bottom: 1px solid rgb(204, 198, 198); 
+    height: 20dvh;
+
+}
+#card7{
+    height: 39dvh;
+    width: 12dvw;
+    background-color: green;
+    border-radius: 15px;
 }
