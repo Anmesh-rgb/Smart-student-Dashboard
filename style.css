@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 .dashboard{
     display: flex;
 }
@@ -64,9 +63,18 @@
     justify-self: flex-end;
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border: none;
     cursor: pointer;
+}
+#mode i{
+    font-size: 20px;
+    color: orange;
+}
+#mode h4{
+    font-size: 15px;
+    color: rgb(188, 129, 19);
 }
 /* content */
 #content{
@@ -194,11 +202,29 @@
     background-color: rgb(188, 16, 16);
     color: white;
     cursor: pointer;
+    width: 13dvw;
+    height: 5dvh;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 .card4 #mode{
-    background-color: rgb(58, 57, 57);
     color: white;
     cursor: pointer;
+    width: 13dvw;
+    height: 5dvh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+}
+#mode h4{
+    color: rgb(185, 117, 28);
 }
 .card4 #input_div{
     display: flex;
@@ -247,17 +273,15 @@
     border-radius: 15px;
     background-color: rgb(215, 223, 222);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* starting subject and marks sec */
 .card6{
     width: 50%;
-    height: 57dvh;
-    margin: 0px 0px 0px 15px;
-    
+    height: 56.5tdvh;    
 }
 .card6 h2{
-    margin: 8px 0px 0px 0px;
+    margin: 1px 0px 0px 0px;
     border-bottom: 1px solid rgb(204, 198, 198);
     height: 5dvh;
   
@@ -270,7 +294,11 @@
     padding: 10px;
 
 }
-.card6 #sub-btn{
+#sub-div{
+    display: flex;
+    justify-content: space-around;
+}
+.card6 .sub-btn{
     width: 8dvw;
     height: 4dvh;
     border-radius: 15px;
@@ -278,6 +306,10 @@
     background-color:  rgb(33, 89, 169);
     color: white;
     cursor: pointer;
+    margin-top: 19px;
+}
+.card6 #result-btn{
+    background-color: rgb(28, 92, 195);
 }
 .card6 span input{
     border-radius: 15px;
@@ -285,16 +317,43 @@
     height: 4dvh;
     margin-left: 2px;
     padding: 9px;
-    
+    margin-top: 19px;
 }
 .card6 #input_div{
     border-bottom: 1px solid rgb(204, 198, 198); 
-    height: 20dvh;
+    height: 26dvh;
 
 }
-#card7{
-    height: 39dvh;
-    width: 12dvw;
-    background-color: green;
+#result{
+    height: 20dvh;
+    width: 18dvw;
+    background-color: rgb(191, 198, 214);
+    margin-top: 10px;
     border-radius: 15px;
+
+}
+#result h4{
+    margin: 0px 0px 0px 90px;
+    width: 100%;
+    
+}
+
+#card7{
+    height: fit-content;
+    width: 16dvw;
+    background-color: rgb(196, 197, 199);
+    border-radius: 15px;
+    margin: 50px 10px 0px 0px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    align-content: space-between;
+    padding: 7px;
+    align-self:self-start;
+}
+#card7 p{
+    margin: 0px 0px 10px 0px;
+    color: rgb(58, 105, 145);
+    
+
 }
