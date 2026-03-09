@@ -24,7 +24,7 @@
              <nav id="nav2">
              <h1>Smart Student Dashboard</h1>
 
-                <button id="mode">
+                <button id="mode" class="mode">
                     <i class="fa-solid fa-sun"></i>
                     <h4>Light mode</h4>
 
@@ -45,7 +45,7 @@
                     </span>
                     <span id="span-2">
                     <label for="class">Class:</label>
-                    <input type="number" placeholder="enter Class" id="std_class">
+                    <input type="text" placeholder="enter Class" id="std_class">
                     </span>
                     <input type="button" value="Save Info" class="save_btn">
                     </div>
@@ -64,7 +64,7 @@
                 <div class="card3 cards"> 
                     <label for="progress">Progress</label>
                     <div class="progress_cont">
-                        <div class="progress"><h4> 82%</h4>
+                        <div class="progress"><h4 id="progress-h4"> </h4>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
 
                 <!-- starting card6 and card7 -->
 
-                <div class="card67">
+                <div class="card67 cards">
                     <div class="card6 cards">
                         <div>
                         <h2>subject & Marks</h2>
@@ -94,24 +94,18 @@
                     </div>
 
                     <div id="result">
-                        <h4>Total Marks : 00</h4>
-                        <h4>Average : 00</h4>
-                        <h4>Grade : A</h4>
+                        <h4 id="tmark">Total Marks : 00</h4>
+                        <h4 id="amark">Average : 00</h4>
+                        <h4 id="grade">Grade : _</h4>
 
                     </div>
                     </div>
                    
 
                     </div>
-                     <div id="card7">
-                        <p>sub1 : 90</p>
-                        <p>sub2 : 90</p>
-                        <p>sub3 : 90</p>
-                        <p>sub4 : 90</p>
-                        <p>sub5 : 90</p>
-                        <p>sub6 : 90</p>
-                        
-
+                     <div id="card7" >
+                        <ul id="list"></ul>
+                       
 
                     </div>
 
@@ -130,7 +124,7 @@
                         <i class="fa-solid fa-trash"></i>
                         <h4>Reset Dashboard</h4>
                     </button>
-                    <button id="mode">
+                    <button id="mode" class="mode">
                     <i class="fa-solid fa-sun"></i>
                     <h4>Light mode</h4>
 
@@ -161,11 +155,6 @@
 
         
      </div>
-   
- 
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
