@@ -5,7 +5,7 @@ let save = document.querySelector(".save_btn")
 let Name = document.querySelector("#d_name");
 let Class = document.querySelector("#d_class");
 
-let display = (nameVal,classVal) =>{
+let display = (nameVal,classVal) => {
    
     Name.innerHTML = `${nameVal}`;
     Class.innerHTML = `${classVal}`;
@@ -163,14 +163,69 @@ reset.addEventListener("click", () =>{
 });
 
 // starting Mode (dark and light mode section)
-let mode = document.querySelectorAll(".mode");
-
-mode.addEventListener("click", () =>{
+    let mode = document.querySelectorAll(".mode");
+    let modeh4 = document.querySelectorAll(".modeh4");
+    let sun = document.querySelectorAll(".sun");
+    let moon = document.querySelectorAll(".moon");
+    let darkmode = false;
+    moon.forEach((btn) =>{
+         btn.style.display = "none";
+    });
 
     
+    mode.forEach((mbtn) => {
+    mbtn.addEventListener("click", () =>{
+        
+        if(darkmode === false){
+
+        modeh4.forEach((h4) =>{
+            h4.innerHTML = "Dark Mode";
+            h4.style.color = "black"
+        });
+        
+        mode.forEach((btn) =>{
+            btn.style.backgroundColor = "rgb(209, 204, 204)";
+        });
+
+        sun.forEach((btn) =>{
+            btn.style.display = "none";
+            
+        });
+        moon.forEach((btn) =>{
+            btn.style.color = "black";
+            btn.style.display = "block";
+            
+        });
+
+        darkmode = true;
+    }
+    else{
+          modeh4.forEach((h4) =>{
+            h4.innerHTML = "Light Mode";
+            h4.style.color = "rgb(240, 166, 30)"
+        });
+
+        mode.forEach((btn) =>{
+            btn.style.backgroundColor = "rgb(111, 109, 109)";
+        });
+            moon.forEach((btn) =>{
+            btn.style.display = "none";
+        });
+
+        sun.forEach((btn) =>{
+            btn.style.color = "rgb(240, 166, 30)";
+            btn.style.display = "block";
+        });
 
 
+       
 
-
+        darkmode = false;
+    }
+ 
+});
 });
 
+   
+    
+   
